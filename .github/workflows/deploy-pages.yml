@@ -25,6 +25,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Resolve branch drift check
+        run: echo "Preparing Pages artifact from current branch state"
+
       - name: Prepare static site
         run: |
           mkdir -p _site

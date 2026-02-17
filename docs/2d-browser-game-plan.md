@@ -148,6 +148,7 @@ Start with **Phaser 3 + TypeScript + Vite** for fastest path to a polished, cros
 
 ## GitHub Pages deployment notes
 - Use GitHub Actions to build and deploy to `gh-pages` or Pages artifact workflow.
+- Repository workflow file: `.github/workflows/deploy-pages.yml` (manual run via `workflow_dispatch` or push to `main`).
 - Ensure asset paths work for repository subpath hosting.
 - Add cache-busting via hashed bundles.
 
